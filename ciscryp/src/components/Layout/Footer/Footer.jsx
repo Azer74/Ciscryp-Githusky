@@ -1,11 +1,6 @@
-import Logo from "../../../assets/logo-light.efd6c8c15ce9ff0f90cc7add4d464ab1.svg"
-import { BsFacebook} from "react-icons/bs";
-import { BsTwitter} from "react-icons/bs";
-import { SiKickstarter } from "react-icons/si";
-import { BsVimeo } from "react-icons/bs";
-import styledFoot from "./Footer.module.css"
-
-import React from 'react'
+import Logo from "../../../assets/logo-light.efd6c8c15ce9ff0f90cc7add4d464ab1.svg";
+import styledFoot from "./Footer.module.css";
+import React from "react";
 
 const Footer = () => {
   return (
@@ -16,15 +11,42 @@ const Footer = () => {
             <div className={styledFoot.logo}>
               <img src={Logo} alt="Logo" />
             </div>
-            <h5>A minimal, a paid-membership publication on Ghost.</h5>
-          </div>
-          <div className="col-lg-2 col-6">
-            <ul>
-              <h6>Social</h6>
-              <li><BsFacebook />Facebook</li>
-              <li><BsTwitter />Twitter</li>
-              <li><SiKickstarter />Kickstarter</li>
-              <li><BsVimeo />Vimeo</li>
+            <ul className={styledFoot.logos}>
+              <li>
+                <img
+                  src="https://chisnghiax.com/ciscryp/static/media/facebook.8291c7f7c187e8f09292cced2ed0278d.svg"
+                  alt=""
+                />
+                Facebook
+              </li>
+              <li>
+                <img
+                  src="https://chisnghiax.com/ciscryp/static/media/vimeo.539e4985d2c0dced329fe8bfebf273db.svg"
+                  alt=""
+                />
+                Vimeo
+              </li>
+              <li>
+                <img
+                  src="https://chisnghiax.com/ciscryp/static/media/youtube.bb2387598b5621f3a2e92ab928da4fe0.svg"
+                  alt=""
+                />
+                Youtube
+              </li>
+              <li>
+                <img
+                  src="https://chisnghiax.com/ciscryp/static/media/telegram.5acad1587076bc12320cadff0f4aa3f3.svg"
+                  alt=""
+                />
+                Telegram
+              </li>
+              <li>
+                <img
+                  src="https://chisnghiax.com/ciscryp/static/media/twitter.f56ce1bc9eb5120250ac80ed561cf82f.svg"
+                  alt=""
+                />
+                Twitter
+              </li>
             </ul>
           </div>
           <div className="col-lg-2 col-6">
@@ -32,6 +54,7 @@ const Footer = () => {
               <h6>About</h6>
               <li>Style Guide</li>
               <li>Features</li>
+              <li>Contact</li>
               <li>Contact</li>
               <li>404</li>
               <li>Get Theme</li>
@@ -44,6 +67,7 @@ const Footer = () => {
               <li>Light version</li>
               <li>Color version</li>
               <li>Partial version</li>
+              <li>Partial version</li>
               <li>Dark version</li>
             </ul>
           </div>
@@ -53,7 +77,19 @@ const Footer = () => {
               <li>Account</li>
               <li>Membership</li>
               <li>Subscribe</li>
+              <li>Subscribe</li>
               <li>Tags</li>
+              <li>Authors</li>
+            </ul>
+          </div>
+          <div className="col-lg-2 col-6">
+            <ul>
+              <h6>Membership</h6>
+              <li>Account</li>
+              <li>Membership</li>
+              <li>Subscribe</li>
+              <li>Tags</li>
+              <li>Authors</li>
               <li>Authors</li>
             </ul>
           </div>
@@ -65,7 +101,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
