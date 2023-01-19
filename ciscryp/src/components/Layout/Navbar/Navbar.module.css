@@ -9,68 +9,117 @@ nav .left_nav {
   align-items: center;
   gap: 40px;
 }
+nav .left_nav .nav_search {
+  position: relative;
+}
 nav .left_nav .nav_search input {
   background-color: transparent;
+  outline: none;
+  border: 1px solid #3f434a;
+  padding: 10px 40px 10px 15px;
+  color: rgb(235, 235, 235);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 320px;
+  border-radius: 15px;
+}
+nav .left_nav .nav_search svg {
+  position: absolute;
+  top: 11px;
+  left: 91%;
+  right: 0;
+  font-size: 18px;
+  color: grey;
 }
 nav .right_nav {
   margin-left: 30px;
   height: 100%;
   display: flex;
+  justify-content: flex-end;
 }
 nav .right_nav ul {
-  width: 60%;
   height: 100%;
   list-style: none;
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 0;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 nav .right_nav ul li {
-  height: 100%;
-  padding: 10px 20px;
-  font-weight: 500;
-  font-size: 15px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
   display: flex;
   align-items: center;
   cursor: pointer;
-  border-radius: 3px;
   transition: all 0.25s ease;
+  color: #d1d5db;
+  font-family: "Poppins", sans-serif;
+}
+nav .right_nav ul li svg {
+  color: #d1d5db;
+  font-size: 17px;
+  margin-left: 3px;
 }
 nav .right_nav ul li:hover {
-  background-color: rgba(240, 142, 128, 0.1);
+  background-color: rgb(31, 41, 55);
+}
+nav .right_nav .border_alone {
+  border-left: 1px solid #3f434a;
 }
 nav .far_right_nav {
   display: flex;
-  justify-content: flex-end;
   gap: 10px;
   height: 100%;
-  width: 40%;
+  margin-left: 15px;
 }
-nav .far_right_nav .nav_search {
-  height: 100%;
-  padding: 10px 20px;
+nav .far_right_nav .nav_blue_btn {
+  padding: 6px 20px;
   display: flex;
-  gap: 5px;
   align-items: center;
   transition: all 0.25s ease;
   cursor: pointer;
-  border-radius: 3px;
+  background-color: rgb(2, 132, 199);
+  border-radius: 50px;
 }
-nav .far_right_nav .nav_search span {
-  font-weight: 500;
+nav .far_right_nav .nav_blue_btn:hover {
+  background-color: rgb(3, 105, 161);
 }
-nav .far_right_nav .nav_search:hover {
-  background-color: rgba(240, 142, 128, 0.1);
+nav .far_right_nav .nav_blue_btn span {
+  font-size: 16px;
+  color: white;
 }
 nav .far_right_nav .dl_mode {
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #d1d5db;
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s ease-in-out;
+  margin-right: 10px;
+}
+nav .far_right_nav .dl_mode:hover {
+  background-color: rgb(31, 41, 55);
+}
+nav .far_right_nav .connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3f434a;
+  padding: 6px 20px;
+  border-radius: 50px;
   cursor: pointer;
 }
-nav .far_right_nav .dl_mode img {
-  width: 25px;
-  height: 25px;
-  transform: scale(-1, 1);
-}/*# sourceMappingURL=Navbar.module.css.map */
+nav .far_right_nav .connect:hover {
+  background-color: rgb(31, 41, 55);
+}
+nav .far_right_nav .connect small {
+  font-size: 16px;
+  color: #d1d5db;
+} /*# sourceMappingURL=Navbar.module.css.map */

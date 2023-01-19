@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Azer74/Ciscryp-Githusky#readme",
   "devDependencies": {
+    "@iconify/react": "^4.0.1",
     "husky": "^8.0.0",
     "pretty-quick": "^3.1.3"
   }
