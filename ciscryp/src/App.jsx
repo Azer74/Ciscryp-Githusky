@@ -1,4 +1,5 @@
 import React from "react";
+import Home from "./components/Home/Home";
 // import styled from "../src/App.module.css";
 
 // const data = [
@@ -150,9 +151,9 @@ import React from "react";
 
 function App() {
   return (
-    <div>
-      <main></main>
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 
