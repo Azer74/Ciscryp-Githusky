@@ -1,1 +1,173 @@
-/*# sourceMappingURL=Creators.module.css.map */
+.third_section {
+  background-color: #111827;
+  font-family: "Poppins", sans-serif;
+  padding: 130px 0;
+}
+.third_section .click_text h3 {
+  font-size: 36px;
+  color: #f9fafb;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.third_section .click_text h3 span {
+  color: #22c55e;
+}
+.third_section .click_text h3 span svg {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.third_section .sorting_container {
+  display: flex;
+  justify-content: flex-end;
+}
+.third_section .sorting_container .sorting_btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #3f434a;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.third_section .sorting_container .sorting_btn .sorting_icon {
+  color: #9ca3af;
+  border: 1px solid #9ca3af;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 17px;
+  margin-right: 10px;
+}
+.third_section .sorting_container .sorting_btn .sorting_icon svg {
+  font-size: 15px;
+}
+.third_section .sorting_container .sorting_btn span {
+  font-size: 16px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+.third_section .sorting_container .sorting_btn small {
+  margin-left: 20px;
+}
+.third_section .sorting_container .sorting_btn small svg {
+  color: #9ca3af;
+  font-size: 20px;
+}
+.third_section .card1 {
+  padding: 16px;
+  border: 1px solid #3f434a;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.third_section .card1:hover {
+  background-color: rgb(31, 41, 55);
+}
+.third_section .card1 .images_shrink {
+  flex-shrink: 0;
+  height: 6rem;
+  display: flex;
+  gap: 8px;
+}
+.third_section .card1 .images_shrink .img_container {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+}
+.third_section .card1 .images_shrink .img_container img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.third_section .card1 .card_texts {
+  margin-top: 30px;
+}
+.third_section .card1 .card_texts .items_head {
+  display: flex;
+  justify-content: space-between;
+}
+.third_section .card1 .card_texts .items_head .person_inform h6 {
+  display: flex;
+  color: #e5e7eb;
+  margin-bottom: 0;
+}
+.third_section .card1 .card_texts .items_head .person_inform h6 img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.third_section .card1 .card_texts .items_head .person_inform small {
+  color: #9ca3af;
+}
+.third_section .card1 .card_texts .items_head span {
+  color: #d1d5db;
+  border: 1px solid #3f434a;
+  padding: 6px 16px;
+  height: 33px;
+  font-size: 14px;
+  border-radius: 50px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  background-color: #111827;
+}
+.third_section .card1 .card_texts .items_head span:hover {
+  background-color: rgb(31, 41, 55);
+}
+.third_section .card1 .card_texts p {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 15px 0 0 0;
+  max-width: 250px;
+}
+.third_section .card1 .avatar_absolute {
+  position: absolute;
+  top: 26%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third_section .card1 .avatar_absolute .avatar_container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 4px black;
+}
+.third_section .card1 .avatar_absolute .avatar_container img {
+  width: 100%;
+}
+.third_section .buttons_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.third_section .buttons_container button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #3f434a;
+  color: #d1d5db;
+  font-weight: 500;
+}
+.third_section .buttons_container button:hover {
+  background-color: rgb(31, 41, 55);
+}
+.third_section .buttons_container .blue_button {
+  background-color: #0284c7;
+  border: none;
+  color: #f9fafb;
+}
+.third_section .buttons_container .blue_button:hover {
+  background-color: rgb(3, 105, 161);
+} /*# sourceMappingURL=Creators.module.css.map */
