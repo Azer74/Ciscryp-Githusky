@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 const Discover = () => {
   return (
-    <section>
+    <section className={DiscoverStyle.first_section}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6">

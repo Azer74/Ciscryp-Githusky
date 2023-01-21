@@ -12,7 +12,9 @@ const Navbar = () => {
           <div className="col-5">
             <div className={styledNav.left_nav}>
               <div className="logo">
-                <img src={Logo} alt="" />
+                <a href="https://chisnghiax.com/ciscryp/home2">
+                  <img src={Logo} alt="" />
+                </a>
               </div>
               <div className={styledNav.nav_search}>
                 <input

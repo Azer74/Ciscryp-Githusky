@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: white;
+}
+
 main {
   background-color: #111827;
 }
@@ -111,4 +115,4 @@ main .cards .card_img:hover .box_shadow {
 }
 main .cards .card_img:hover .box_shadow::before {
   opacity: 0;
-}/*# sourceMappingURL=App.module.css.map */
+} /*# sourceMappingURL=App.module.css.map */
