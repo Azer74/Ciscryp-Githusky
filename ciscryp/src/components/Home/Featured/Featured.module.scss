@@ -1,0 +1,345 @@
+.featured {
+  background-color: #111827;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+
+  .featured_heading {
+    margin-bottom: 50px;
+
+    h2 {
+      color: #f9fafb;
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #9ca3af;
+      font-size: 18px;
+    }
+  }
+
+  .sorting_by {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: #9ca3af;
+      padding: 8px 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.1s ease-in-out;
+
+      &:hover {
+        background-color: rgba(31, 41, 55);
+        color: white;
+      }
+    }
+
+    .aktiv {
+      font-weight: 500;
+      background-color: #e0f2fe;
+      color: #0c4a6e;
+
+      &:hover {
+        background-color: #e0f2fe;
+        color: #0c4a6e;
+      }
+    }
+  }
+
+  .right_col {
+    display: flex;
+    justify-content: flex-end;
+
+    .filter_button {
+      display: flex;
+      align-items: center;
+      color: #f9fafb;
+      background-color: #0284c7;
+      padding: 12px 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #0369a1;
+      }
+
+      svg {
+        font-size: 23px;
+      }
+
+      span {
+        margin-left: 10px;
+      }
+
+      small {
+        margin: 0 0 0 30px;
+
+        svg {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .disappearing_field {
+    border-top: 1px solid #3f434a;
+    padding-top: 30px;
+
+    .filter_list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+
+      li {
+        color: #d1d5db;
+        cursor: pointer;
+        padding: 6px 16px;
+        border-radius: 50px;
+        border: 1px solid #3f434a;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.25s ease;
+
+        span {
+          font-size: 14px;
+        }
+
+        &:hover {
+          border-color: rgb(14, 165, 233);
+        }
+      }
+
+      .white_one {
+        color: #0c4a6e;
+        background-color: #f0f9ff;
+        border: 1px inset #0ea5e9;
+
+        small {
+          color: #0ea5e9;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .robots_card {
+    margin-bottom: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      background-color: rgba(31, 41, 55);
+
+      .pic_container {
+        img {
+          transform: scale3d(1.02, 1.02, 1.02);
+        }
+      }
+      .card_text {
+        .box_bottom {
+          .legend_field {
+            small {
+              background-color: rgba(31, 41, 55);
+            }
+          }
+        }
+      }
+    }
+
+    .pic_container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+
+      img {
+        width: 100%;
+        transition: 0.25s ease-in-out;
+      }
+
+      .card_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+
+        .image_icon {
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          width: 36px;
+          height: 36px;
+          border-radius: 50px;
+          text-align: center;
+          line-height: 32px;
+
+          svg {
+            font-size: 21px;
+          }
+        }
+
+        .likes {
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          padding: 0 14px;
+          border-radius: 50px;
+
+          svg {
+            font-size: 22px;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .card_text {
+      padding: 1.25rem 1rem;
+
+      .box_top {
+        border-bottom: 1px solid #3f434a;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+
+        .top_top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+
+          .micro_avatars {
+            display: flex;
+            position: relative;
+            width: 40%;
+            height: 25px;
+
+            .micro_avatar {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 0;
+              right: 0;
+
+              img {
+                border-radius: 25px;
+                width: 100%;
+                object-fit: contain;
+              }
+            }
+
+            .first_ava {
+              left: 0px;
+            }
+
+            .second_ava {
+              left: 15%;
+            }
+
+            .third_ava {
+              left: 30%;
+            }
+
+            .fourth_ava {
+              left: 45%;
+            }
+          }
+
+          .stock_having {
+            color: #9ca3af;
+
+            span {
+              font-size: 0.75rem;
+            }
+          }
+        }
+
+        h5 {
+          color: rgb(229, 231, 235);
+          font-size: 1.125rem;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+      }
+
+      .box_bottom {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        .legend_field {
+          border: 2px solid #22c55e;
+          border-radius: 7px;
+          position: relative;
+          padding: 5px 15px;
+          small {
+            transition: 0.1s ease-in-out;
+            font-size: 0.75rem;
+            color: #9ca3af;
+            background-color: #111827;
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            right: 0;
+            width: 45px;
+            display: flex;
+            justify-content: center;
+          }
+
+          .legend_inner {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            h6 {
+              color: #22c55e;
+              font-size: 1rem;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .hours_count {
+          display: flex;
+          align-items: flex-end;
+          gap: 5px;
+          color: #9ca3af;
+          span {
+            font-size: 0.875rem;
+          }
+          svg {
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
+  .col_adaptation {
+    text-align: center;
+    margin-top: 30px;
+    button {
+      background-color: transparent;
+      border: 1px solid #3f434a;
+      color: #d1d5db;
+      padding: 12px 24px;
+      border-radius: 50px;
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}
