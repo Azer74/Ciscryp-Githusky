@@ -159,6 +159,7 @@
   border: 1px solid #3f434a;
   color: #d1d5db;
   font-weight: 500;
+  transition: 0.1s ease-in-out;
 }
 .third_section .buttons_container button:hover {
   background-color: rgb(31, 41, 55);

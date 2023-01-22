@@ -1,1 +1,179 @@
-/*# sourceMappingURL=Slider.module.css.map */
+.slidering {
+  background-color: #0e131f;
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0;
+}
+.slidering .left_slide_heading h2 {
+  color: #f9fafb;
+  font-size: 36px;
+  font-weight: 600;
+}
+.slidering .left_slide_heading h2 span {
+  color: #22c55e;
+  cursor: pointer;
+}
+.slidering .left_slide_heading h2 span svg {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.slidering .left_slide_heading p {
+  font-size: 20px;
+  color: #9ca3af;
+}
+.slidering .slider_card {
+  width: 100%;
+  height: 410px;
+  position: relative;
+  cursor: pointer;
+}
+.slidering .slider_card:hover .slider_image .overlay_gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(14, 19, 31, 0.7820378151) 75%
+  );
+}
+.slidering .slider_card .slider_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.slidering .slider_card .slider_image img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+}
+.slidering .slider_card .slider_image .overlay_gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(14, 19, 31, 0.7820378151) 75%
+  );
+}
+.slidering .slider_card .card_absolute_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.slidering .slider_card .card_absolute_inner .card_bottom {
+  width: 100%;
+}
+.slidering .slider_card .card_absolute_inner .card_bottom .person_information {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.slidering
+  .slider_card
+  .card_absolute_inner
+  .card_bottom
+  .person_information
+  .person_photo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 2px white;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.slidering
+  .slider_card
+  .card_absolute_inner
+  .card_bottom
+  .person_information
+  .person_photo
+  img {
+  width: 100%;
+}
+.slidering
+  .slider_card
+  .card_absolute_inner
+  .card_bottom
+  .person_information
+  h6 {
+  color: white;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+.slidering
+  .slider_card
+  .card_absolute_inner
+  .card_bottom
+  .person_information
+  .verified_icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+.slidering .slider_card .card_absolute_inner .card_bottom h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+.slidering .slider_card .card_absolute_inner .card_bottom .photos_container {
+  display: flex;
+  gap: 17px;
+}
+.slidering
+  .slider_card
+  .card_absolute_inner
+  .card_bottom
+  .photos_container
+  .mini_photo {
+  width: 33%;
+  height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slidering
+  .slider_card
+  .card_absolute_inner
+  .card_bottom
+  .photos_container
+  .mini_photo
+  img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.slidering .slider_card_empty {
+  height: 410px;
+  cursor: pointer;
+}
+.slidering .slider_card_empty .slider_add {
+  background-color: #1f2937;
+  height: 100%;
+  border-radius: 20px;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slidering .slider_card_empty .slider_add .empty_card_text h5 {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.slidering .slider_card_empty .slider_add .empty_card_text span {
+  font-size: 14px;
+  margin-left: 5px;
+} /*# sourceMappingURL=Slider.module.css.map */
