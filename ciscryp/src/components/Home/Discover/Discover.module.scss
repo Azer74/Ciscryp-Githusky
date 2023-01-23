@@ -4,80 +4,91 @@
   padding: 140px 0px;
   background-color: #111827;
   font-family: "Poppins", sans-serif;
-
-  h2 {
-    font-size: 48px;
-    font-weight: 600;
-    color: #f3f4f6;
-
-    .span_relative {
-      position: relative;
-      padding: 0 12px 0 0;
-
-      .span_absolute {
-        font-size: 48px;
-        z-index: 3;
-      }
-
-      img {
-        width: 100%;
-        position: absolute;
-        top: 33px;
-        left: -3px;
-        right: 0;
-        z-index: 0;
-      }
+  .left_side1 {
+    @media (max-width: 1200px) {
+      margin-bottom: 70px;
     }
-  }
-
-  p {
-    color: #9ca3af;
-    font-size: 18px;
-    margin: 28px 0 0 0;
-    width: 85%;
-    line-height: 30px;
-  }
-
-  .discover_buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 60px;
-
-    button {
-      padding: 12px 24px;
-      border-radius: 50px;
-      color: #f9fafb;
-    }
-
-    .explore_btn {
-      background-color: rgba(2, 132, 199);
-      border: none;
-      transition: 0.3s ease-in-out;
-      small {
-        margin-left: 10px;
-        font-size: 16px;
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      color: #f3f4f6;
+      @media (max-width: 1200px) {
+        font-size: 36px;
       }
-      &:hover {
-        background-color: rgba(3, 105, 161);
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+
+      .span_relative {
+        position: relative;
+        padding: 0 12px 0 0;
+
+        .span_absolute {
+          font-size: 48px;
+          z-index: 3;
+        }
+
+        img {
+          width: 100%;
+          position: absolute;
+          top: 33px;
+          left: -3px;
+          right: 0;
+          z-index: 0;
+        }
       }
     }
 
-    .create_btn {
-      background-color: #111827;
-      border: 1px solid #3f434a;
-      transition: 0.3s ease-in-out;
+    p {
+      color: #9ca3af;
+      font-size: 18px;
+      margin: 28px 0 0 0;
+      width: 85%;
+      line-height: 30px;
+    }
+
+    .discover_buttons {
       display: flex;
-      align-items: center;
-      color: #d1d5db;
-      small {
-        margin-left: 10px;
-        font-size: 20px;
+      gap: 15px;
+      margin-top: 60px;
+
+      button {
+        padding: 12px 24px;
+        border-radius: 50px;
+        color: #f9fafb;
       }
-      &:hover {
-        background-color: rgba(31, 41, 55);
+
+      .explore_btn {
+        background-color: rgba(2, 132, 199);
+        border: none;
+        transition: 0.3s ease-in-out;
+        small {
+          margin-left: 10px;
+          font-size: 16px;
+        }
+        &:hover {
+          background-color: rgba(3, 105, 161);
+        }
+      }
+
+      .create_btn {
+        background-color: #111827;
+        border: 1px solid #3f434a;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        color: #d1d5db;
+        small {
+          margin-left: 10px;
+          font-size: 20px;
+        }
+        &:hover {
+          background-color: rgba(31, 41, 55);
+        }
       }
     }
   }
+
   .first_image {
     img {
       width: 100%;

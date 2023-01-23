@@ -4,20 +4,35 @@
   background-color: #111827;
   font-family: "Poppins", sans-serif;
 }
-.first_section h2 {
+@media (max-width: 1200px) {
+  .first_section .left_side1 {
+    margin-bottom: 70px;
+  }
+}
+.first_section .left_side1 h2 {
   font-size: 48px;
   font-weight: 600;
   color: #f3f4f6;
 }
-.first_section h2 .span_relative {
+@media (max-width: 1200px) {
+  .first_section .left_side1 h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .first_section .left_side1 h2 {
+    font-size: 30px;
+  }
+}
+.first_section .left_side1 h2 .span_relative {
   position: relative;
   padding: 0 12px 0 0;
 }
-.first_section h2 .span_relative .span_absolute {
+.first_section .left_side1 h2 .span_relative .span_absolute {
   font-size: 48px;
   z-index: 3;
 }
-.first_section h2 .span_relative img {
+.first_section .left_side1 h2 .span_relative img {
   width: 100%;
   position: absolute;
   top: 33px;
@@ -25,36 +40,36 @@
   right: 0;
   z-index: 0;
 }
-.first_section p {
+.first_section .left_side1 p {
   color: #9ca3af;
   font-size: 18px;
   margin: 28px 0 0 0;
   width: 85%;
   line-height: 30px;
 }
-.first_section .discover_buttons {
+.first_section .left_side1 .discover_buttons {
   display: flex;
   gap: 15px;
   margin-top: 60px;
 }
-.first_section .discover_buttons button {
+.first_section .left_side1 .discover_buttons button {
   padding: 12px 24px;
   border-radius: 50px;
   color: #f9fafb;
 }
-.first_section .discover_buttons .explore_btn {
+.first_section .left_side1 .discover_buttons .explore_btn {
   background-color: rgb(2, 132, 199);
   border: none;
   transition: 0.3s ease-in-out;
 }
-.first_section .discover_buttons .explore_btn small {
+.first_section .left_side1 .discover_buttons .explore_btn small {
   margin-left: 10px;
   font-size: 16px;
 }
-.first_section .discover_buttons .explore_btn:hover {
+.first_section .left_side1 .discover_buttons .explore_btn:hover {
   background-color: rgb(3, 105, 161);
 }
-.first_section .discover_buttons .create_btn {
+.first_section .left_side1 .discover_buttons .create_btn {
   background-color: #111827;
   border: 1px solid #3f434a;
   transition: 0.3s ease-in-out;
@@ -62,11 +77,11 @@
   align-items: center;
   color: #d1d5db;
 }
-.first_section .discover_buttons .create_btn small {
+.first_section .left_side1 .discover_buttons .create_btn small {
   margin-left: 10px;
   font-size: 20px;
 }
-.first_section .discover_buttons .create_btn:hover {
+.first_section .left_side1 .discover_buttons .create_btn:hover {
   background-color: rgb(31, 41, 55);
 }
 .first_section .first_image img {

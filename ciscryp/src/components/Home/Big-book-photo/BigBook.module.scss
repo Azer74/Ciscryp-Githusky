@@ -3,6 +3,9 @@
   font-family: "Poppins", sans-serif;
   padding: 100px 0;
   .col_adaptation {
+    @media (max-width: 1200px) {
+      margin-bottom: 50px;
+    }
     h2 {
       color: #e5e7eb;
       margin-bottom: 20px;

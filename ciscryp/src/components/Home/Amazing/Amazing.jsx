@@ -19,7 +19,7 @@ const Amazing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-8 px-4">
+              <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 px-4">
                 <div className={AmazingStyle.relative_col12}>
                   <div className={AmazingStyle.timer_container}>
                     <h2>Beautiful NFT</h2>

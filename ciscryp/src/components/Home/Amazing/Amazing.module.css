@@ -57,6 +57,12 @@
   border-radius: 50px;
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  .second_section .relative_col12 .img_container .likes {
+    position: absolute;
+    left: 84%;
+  }
+}
 .second_section .relative_col12 .img_container .likes svg {
   font-size: 18px;
 }
@@ -87,6 +93,17 @@
   background-color: #111827;
   padding: 56px 40px;
   border-radius: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .second_section .relative_col12 .timer_container {
+    width: 450px;
+    top: -35px;
+  }
+}
+@media (max-width: 992px) {
+  .second_section .relative_col12 .timer_container {
+    display: none;
+  }
 }
 .second_section .relative_col12 .timer_container h2 {
   color: #e5e7eb;

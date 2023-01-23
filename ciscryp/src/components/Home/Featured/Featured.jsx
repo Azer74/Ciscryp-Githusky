@@ -163,7 +163,7 @@ const Featured = () => {
             })
             .map((element, index) => (
               <React.Fragment key={`data_id ${element.id}`}>
-                <div className="col-xl-3 px-3">
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 px-3">
                   <div className={FeaturedStyle.robots_card}>
                     <div className={FeaturedStyle.pic_container}>
                       <img src={element.imgUrl} alt=""></img>
