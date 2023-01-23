@@ -5,8 +5,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div className="container">
-        <div className="row justify-content-between mb-5 pb-5">
+      <div className="container pb-5">
+        <div className="row justify-content-between pb-5">
           <div className="col-lg-3 col-6">
             <div className={styledFoot.logo}>
               <img src={Logo} alt="Logo" />
@@ -92,11 +92,6 @@ const Footer = () => {
               <li>Authors</li>
               <li>Authors</li>
             </ul>
-          </div>
-        </div>
-        <div className="row justify-content-center pb-4">
-          <div className="col-lg-6">
-            <p>© 2022 Qurno. All rights reserved.</p>
           </div>
         </div>
       </div>

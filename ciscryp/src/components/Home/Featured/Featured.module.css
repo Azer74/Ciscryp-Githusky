@@ -122,7 +122,7 @@
   transform: scale3d(1.02, 1.02, 1.02);
 }
 .featured .robots_card:hover .card_text .box_bottom .legend_field small {
-  background-color: rgb(31, 41, 55);
+  background-color: #1f2937;
 }
 .featured .robots_card .pic_container {
   position: relative;
@@ -296,6 +296,10 @@
   color: #d1d5db;
   padding: 12px 24px;
   border-radius: 50px;
+  transition: 0.2s ease-in-out;
+}
+.featured .col_adaptation button:hover {
+  background-color: #1f2937;
 }
 .featured .col_adaptation button svg {
   margin-right: 10px;

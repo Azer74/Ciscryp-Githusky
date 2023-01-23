@@ -149,7 +149,7 @@
         .box_bottom {
           .legend_field {
             small {
-              background-color: rgba(31, 41, 55);
+              background-color: #1f2937;
             }
           }
         }
@@ -337,6 +337,10 @@
       color: #d1d5db;
       padding: 12px 24px;
       border-radius: 50px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: #1f2937;
+      }
       svg {
         margin-right: 10px;
       }
