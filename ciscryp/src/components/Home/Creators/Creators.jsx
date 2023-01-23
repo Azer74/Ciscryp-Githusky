@@ -36,7 +36,7 @@ const Creators = () => {
       </div>
       <div className="container mt-5 pt-4">
         <div className="row">
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>
@@ -83,7 +83,7 @@ const Creators = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>
@@ -130,7 +130,7 @@ const Creators = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>
@@ -177,7 +177,7 @@ const Creators = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>
@@ -224,7 +224,7 @@ const Creators = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>
@@ -271,7 +271,7 @@ const Creators = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>
@@ -318,7 +318,7 @@ const Creators = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>
@@ -365,7 +365,7 @@ const Creators = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div className={CreatorsStyle.card1}>
               <div className={CreatorsStyle.images_shrink}>
                 <div className={CreatorsStyle.img_container}>

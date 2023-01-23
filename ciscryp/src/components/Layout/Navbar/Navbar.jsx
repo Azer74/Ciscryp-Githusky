@@ -46,6 +46,9 @@ const Navbar = () => {
                 <div className={styledNav.connect}>
                   <small>Connect Wallet</small>
                 </div>
+                <div className={styledNav.mobile_bars}>
+                  <Icon icon="humbleicons:bars" />
+                </div>
               </div>
             </div>
           </div>

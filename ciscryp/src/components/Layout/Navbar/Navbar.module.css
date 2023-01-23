@@ -9,8 +9,18 @@ nav .left_nav {
   align-items: center;
   gap: 40px;
 }
+@media (max-width: 1400px) {
+  nav .left_nav {
+    gap: 20px;
+  }
+}
 nav .left_nav .nav_search {
   position: relative;
+}
+@media (max-width: 768px) {
+  nav .left_nav .nav_search {
+    display: none;
+  }
 }
 nav .left_nav .nav_search input {
   background-color: transparent;
@@ -22,6 +32,11 @@ nav .left_nav .nav_search input {
   line-height: 1.25rem;
   width: 320px;
   border-radius: 15px;
+}
+@media (max-width: 1400px) {
+  nav .left_nav .nav_search input {
+    width: 290px;
+  }
 }
 nav .left_nav .nav_search svg {
   position: absolute;
@@ -37,6 +52,16 @@ nav .right_nav {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 1400px) {
+  nav .right_nav {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  nav .right_nav {
+    margin-left: 0px;
+  }
+}
 nav .right_nav ul {
   height: 100%;
   list-style: none;
@@ -45,6 +70,11 @@ nav .right_nav ul {
   gap: 10px;
   padding: 0;
   margin: 0 10px 0 0;
+}
+@media (max-width: 1200px) {
+  nav .right_nav ul {
+    display: none;
+  }
 }
 nav .right_nav ul li {
   padding: 8px 20px;
@@ -69,14 +99,24 @@ nav .right_nav ul li:hover {
 nav .right_nav .border_alone {
   border-left: 1px solid #3f434a;
 }
+@media (max-width: 1200px) {
+  nav .right_nav .border_alone {
+    display: none;
+  }
+}
 nav .far_right_nav {
   display: flex;
   gap: 10px;
   height: 100%;
   margin-left: 15px;
 }
+@media (max-width: 1200px) {
+  nav .far_right_nav {
+    gap: 30px;
+  }
+}
 nav .far_right_nav .nav_blue_btn {
-  padding: 6px 20px;
+  padding: 0px 20px;
   display: flex;
   align-items: center;
   transition: all 0.25s ease;
@@ -104,6 +144,11 @@ nav .far_right_nav .dl_mode {
   transition: 0.3s ease-in-out;
   margin-right: 10px;
 }
+@media (max-width: 1200px) {
+  nav .far_right_nav .dl_mode {
+    display: none;
+  }
+}
 nav .far_right_nav .dl_mode:hover {
   background-color: rgb(31, 41, 55);
 }
@@ -116,10 +161,27 @@ nav .far_right_nav .connect {
   border-radius: 50px;
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  nav .far_right_nav .connect {
+    display: none;
+  }
+}
 nav .far_right_nav .connect:hover {
   background-color: rgb(31, 41, 55);
 }
 nav .far_right_nav .connect small {
   font-size: 16px;
   color: #d1d5db;
+}
+nav .far_right_nav .mobile_bars {
+  color: #d1d5db;
+  display: none;
+  font-size: 24px;
+}
+@media (max-width: 1200px) {
+  nav .far_right_nav .mobile_bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 } /*# sourceMappingURL=Navbar.module.css.map */

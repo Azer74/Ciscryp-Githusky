@@ -63,6 +63,7 @@ const data = [
 
 const Featured = () => {
   const [show, setShow] = useState(true);
+  const [SearchTerm, setSearchTerm] = useState("");
   return (
     <section className={FeaturedStyle.featured}>
       <div className="container">
@@ -88,6 +89,13 @@ const Featured = () => {
           </div>
           <div className="col-xl-6">
             <div className={FeaturedStyle.right_col}>
+              <input
+                type="text"
+                placeholder="Search product here"
+                onChange={(event) => {
+                  setSearchTerm(event.target.value);
+                }}
+              />
               <div
                 className={FeaturedStyle.filter_button}
                 onClick={() => setShow(!show)}
@@ -145,82 +153,90 @@ const Featured = () => {
       </div>
       <div className="container mt-5">
         <div className="row">
-          {data.map((element, index) => (
-            <React.Fragment key={`data_id ${element.id}`}>
-              <div className="col-xl-3 px-3">
-                <div className={FeaturedStyle.robots_card}>
-                  <div className={FeaturedStyle.pic_container}>
-                    <img src={element.imgUrl} alt=""></img>
-                    <div className={FeaturedStyle.card_overlay}>
-                      <div className={FeaturedStyle.image_icon}>
-                        <Icon icon="mdi-light:image" />
-                      </div>
-                      <div className={FeaturedStyle.likes}>
-                        <Icon icon="ph:heart-light" />
-                        <span>22</span>
+          {data
+            .filter((val) => {
+              if (SearchTerm === "") {
+                return val;
+              } else if (val.productName.includes(SearchTerm)) {
+                return val;
+              }
+            })
+            .map((element, index) => (
+              <React.Fragment key={`data_id ${element.id}`}>
+                <div className="col-xl-3 px-3">
+                  <div className={FeaturedStyle.robots_card}>
+                    <div className={FeaturedStyle.pic_container}>
+                      <img src={element.imgUrl} alt=""></img>
+                      <div className={FeaturedStyle.card_overlay}>
+                        <div className={FeaturedStyle.image_icon}>
+                          <Icon icon="mdi-light:image" />
+                        </div>
+                        <div className={FeaturedStyle.likes}>
+                          <Icon icon="ph:heart-light" />
+                          <span>22</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className={FeaturedStyle["card_text"]}>
-                    <div className={FeaturedStyle["box_top"]}>
-                      <div className={FeaturedStyle.top_top}>
-                        <div className={FeaturedStyle.micro_avatars}>
-                          <div
-                            className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.first_ava}`}
-                          >
-                            <img
-                              src="https://chisnghiax.com/ciscryp/static/media/Image-4.36899b28c72dc4bc41a9.png"
-                              alt=""
-                            />
+                    <div className={FeaturedStyle["card_text"]}>
+                      <div className={FeaturedStyle["box_top"]}>
+                        <div className={FeaturedStyle.top_top}>
+                          <div className={FeaturedStyle.micro_avatars}>
+                            <div
+                              className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.first_ava}`}
+                            >
+                              <img
+                                src="https://chisnghiax.com/ciscryp/static/media/Image-4.36899b28c72dc4bc41a9.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.second_ava}`}
+                            >
+                              <img
+                                src="https://chisnghiax.com/ciscryp/static/media/Image-1.90baa8cc883db8970fda.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.third_ava}`}
+                            >
+                              <img
+                                src="https://chisnghiax.com/ciscryp/static/media/Image-2.405c62ff9ad88c47e28c.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.fourth_ava}`}
+                            >
+                              <img
+                                src="https://chisnghiax.com/ciscryp/static/media/Image-5.b1088376a574bcedc983.png"
+                                alt=""
+                              />
+                            </div>
                           </div>
-                          <div
-                            className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.second_ava}`}
-                          >
-                            <img
-                              src="https://chisnghiax.com/ciscryp/static/media/Image-1.90baa8cc883db8970fda.png"
-                              alt=""
-                            />
-                          </div>
-                          <div
-                            className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.third_ava}`}
-                          >
-                            <img
-                              src="https://chisnghiax.com/ciscryp/static/media/Image-2.405c62ff9ad88c47e28c.png"
-                              alt=""
-                            />
-                          </div>
-                          <div
-                            className={`${FeaturedStyle.micro_avatar} ${FeaturedStyle.fourth_ava}`}
-                          >
-                            <img
-                              src="https://chisnghiax.com/ciscryp/static/media/Image-5.b1088376a574bcedc983.png"
-                              alt=""
-                            />
+                          <div className={FeaturedStyle.stock_having}>
+                            <span>{`${element.stock} in stock`}</span>
                           </div>
                         </div>
-                        <div className={FeaturedStyle.stock_having}>
-                          <span>{`${element.stock} in stock`}</span>
-                        </div>
+                        <h5>CloneF #{`${element.productName}`}</h5>
                       </div>
-                      <h5>CloneF #{`${element.productName}`}</h5>
-                    </div>
-                    <div className={FeaturedStyle.box_bottom}>
-                      <div className={FeaturedStyle.legend_field}>
-                        <small>Price</small>
-                        <div className={FeaturedStyle.legend_inner}>
-                          <h6>1.000 ETH</h6>
+                      <div className={FeaturedStyle.box_bottom}>
+                        <div className={FeaturedStyle.legend_field}>
+                          <small>Price</small>
+                          <div className={FeaturedStyle.legend_inner}>
+                            <h6>1.000 ETH</h6>
+                          </div>
                         </div>
-                      </div>
-                      <div className={FeaturedStyle.hours_count}>
-                        <Icon icon="svg-spinners:clock" />
-                        <span>6 hours left</span>
+                        <div className={FeaturedStyle.hours_count}>
+                          <Icon icon="svg-spinners:clock" />
+                          <span>6 hours left</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </React.Fragment>
-          ))}
+              </React.Fragment>
+            ))}
         </div>
       </div>
       <div className="container">
@@ -228,7 +244,7 @@ const Featured = () => {
           <div className="col-xl-12">
             <div className={FeaturedStyle.col_adaptation}>
               <button>
-                <Icon icon="svg-spinners:blocks-shuffle-3" />
+                <Icon icon="svg-spinners:blocks-wave" />
                 Show me more
               </button>
             </div>
